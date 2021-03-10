@@ -1,6 +1,6 @@
-#Algoritmo de clasificacionn en k clases. Vamos a emplear el dataset  Country-data.csv
-#Este dataset incluye para un conjunto de países información sobre variables relacionadas con la 
-#riqueza, como mortalidad infantil, salud, exportaciones, etc. 
+#Algoritmo de clasificacionn en k clases. vamos a emplear el fichero cost-of-living de Kaggle, 
+#con los costes de distintos elementos en varias ciudades, como  indicadores del nivel de vida, 
+#que incluye un total de 55 elementos para 161 ciudades. 
 #Seria recomendable reducir la dimension de los datos antes de procesar, pero no lo vamos a hacer
 #para centrarnos solo en el clustering
 
