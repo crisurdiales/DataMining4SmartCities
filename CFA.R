@@ -56,11 +56,4 @@ fa.diagram(Three_FactorLoading) #esto pinta que incluye cada factor
 
 print(Three_FactorLoading)
 #Ahora miramos el output del analisis. RMSR vale 0.04 (cuanto mas bajo mejor)
-#RMSEA no me ha salido?? pero debería ser menor de 0.05. Tucker, que tampoco me sale, debería ser mayor de 0.9 
-
-############ EJEMPLO ORIGINAL
-dataset_bfi = bfi             #Loading the Dataset
-dataset_bfi = dataset_bfi[complete.cases(dataset_bfi),] #Removing the rows with Missing Values
-cor_mat <- cor(dataset_bfi)   #Creating Correlation Matrix 
-FactorLoading <- fa(r = cor_mat, nfactors = 6)
-FactorLoading
+#RMSEA no me ha salido, pero debería ser menor de 0.05. Tucker, que tampoco me sale, debería ser mayor de 0.9 
