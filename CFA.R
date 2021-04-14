@@ -20,7 +20,7 @@ library(GPArotation)
 #PTRATIO pupil-teacher ratio by town
 #B - 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
 #LSTAT - % lower status of the population
-#MEDV - Median value of owner-occupied homes in $1000's
+#MEDV - Median value of owner-occupied homes in 's
 
 #quitemos el precio, que es lo que suponemos que depende de todo..
 houses<-houses[,-14]
@@ -50,9 +50,9 @@ print(Three_FactorLoading$loading,cutoff = 0.3) #ahora ya si. CHAS no importa. L
 
 fa.diagram(Three_FactorLoading) #esto pinta que incluye cada factor
 #ahora hay que darle sentido: MR1 (DIS, AGE, NOX, ZN e INDUS) viene a ser como de industrializada está la zona
-#MR2 (RAD, TAX,CRIM, B) es si es un "buen barrio" con criterio yanqui: poco negro, poco crimen, autovias accesibles..
+#MR2 (RAD, TAX,CRIM, B) es si es un "buen barrio" con criterio norteamericano conservador: poca gente de color, poco crimen, autovias accesibles..
 #MR3 (RM,LSTAT,PTRATIO) representa el numero de habitaciones, status del vecindario y ratio de profesores. Tal vez numero de hijos?.
-#hay que notar que no todas las variables cargan igual: el crimen (por suerte) pesa más que el porcentaje de negros, el status, no sorprendentemente, mas que el numero de profesores
+#hay que notar que no todas las variables cargan igual: el crimen (por suerte) pesa más que el porcentaje de gente de color, el status, no sorprendentemente, mas que el numero de profesores
 
 print(Three_FactorLoading)
 #Ahora miramos el output del analisis. RMSR vale 0.04 (cuanto mas bajo mejor)
